@@ -674,9 +674,9 @@ npm run prebuild:clean:ios
 
 ---
 
-## 16. Resumen rapido de lo mas importante para ensenar
+## 16. Resumen rapido de lo mas importante 
 
-Si lo vas a explicar en clase o en una demo, estos son los mensajes clave:
+estos son los mensajes clave:
 
 1. **La app cliente no crea pagos directamente.**
    El backend crea la preferencia.
@@ -689,27 +689,3 @@ Si lo vas a explicar en clase o en una demo, estos son los mensajes clave:
 5. **En iOS hay que cerrar Safari View Controller manualmente.**
    Eso lo hace `WebBrowser.dismissBrowser()`.
 
----
-
-## 17. Referencias oficiales
-
-- Crear aplicacion:
-  https://www.mercadopago.com.mx/developers/es/docs/checkout-pro/create-application
-- Configurar ambiente de desarrollo:
-  https://www.mercadopago.com.mx/developers/es/docs/checkout-pro/configure-development-enviroment
-- Crear y configurar una preferencia de pago:
-  https://www.mercadopago.com.mx/developers/es/docs/checkout-pro/create-payment-preference
-- React Native Expo Go:
-  https://www.mercadopago.com.mx/developers/es/docs/checkout-pro/mobile-integration/react-native-expo-go
-- Configurar URLs de retorno:
-  https://www.mercadopago.com.mx/developers/es/docs/checkout-pro/configure-back-urls
-- Realizar compras de prueba:
-  https://www.mercadopago.com.mx/developers/es/docs/checkout-pro/integration-test/test-purchases
-- Salir a produccion:
-  https://www.mercadopago.com.mx/developers/es/docs/checkout-pro/go-to-production
-- Expo Linking overview:
-  https://docs.expo.dev/linking/overview/
-- Expo Linking into your app:
-  https://docs.expo.dev/linking/into-your-app/
-- Expo dev build:
-  https://docs.expo.dev/develop/development-builds/expo-go-to-dev-build/
