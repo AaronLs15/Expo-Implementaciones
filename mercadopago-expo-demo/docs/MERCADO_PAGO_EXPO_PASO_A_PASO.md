@@ -1,14 +1,12 @@
 # Mercado Pago + Expo
 
-Guia paso a paso para crear una demo didactica de **Mercado Pago Checkout Pro** en **Expo**, pensada para personas con poca experiencia en Expo y en JavaScript.
-
-Esta guia esta alineada con el proyecto que ya existe en este repositorio.
+Guia paso a paso para crear una demo didactica de **Mercado Pago Checkout Pro** en **Expo**
 
 ---
 
-## 1. Que vas a construir
+## 1. Que se va a construir
 
-Vas a montar una app de Expo que hace este flujo:
+se va a montar una app de Expo que hace este flujo:
 
 1. La app le pide a un backend que cree una preferencia de pago.
 2. El backend usa el **Access Token** de Mercado Pago para crear esa preferencia.
@@ -132,13 +130,13 @@ mercadopago-expo-demo/
 
 ## 6. Variables de entorno
 
-Primero crea tu archivo `.env` a partir del ejemplo:
+Primero crear archivo `.env` a partir del ejemplo:
 
 ```bash
 cp .env.example .env
 ```
 
-El contenido esperado es este:
+El contenido es este:
 
 ```env
 EXPO_PUBLIC_API_BASE_URL=http://127.0.0.1:3001
@@ -157,7 +155,7 @@ PORT=3001
 #### `MERCADO_PAGO_ACCESS_TOKEN`
 
 - Lo usa el backend.
-- Debe ser tu **Access Token de pruebas**.
+- Debe ser el **Access Token de pruebas**.
 - Nunca debe ponerse en el frontend.
 
 #### `PORT`
@@ -169,7 +167,7 @@ PORT=3001
 
 Esta guia esta pensada para **iOS Simulator**.
 
-Si luego quieres correrlo en un iPhone real:
+Si quieres correrlo en un iPhone real:
 
 - `127.0.0.1` ya no te sirve.
 - Debes reemplazar `EXPO_PUBLIC_API_BASE_URL` por la IP local de tu Mac.
@@ -186,7 +184,7 @@ EXPO_PUBLIC_API_BASE_URL=http://192.168.1.25:3001
 
 Mercado Pago necesita una forma de volver a tu app cuando termina el pago.
 
-Para eso usamos un **scheme** fijo:
+Para eso se usa un **scheme** fijo:
 
 ```json
 "scheme": "mercadopagoexpo"
@@ -331,7 +329,7 @@ El frontend vive en:
 
 - `App.js`
 
-Es una pantalla unica para que el flujo sea facil de explicar.
+Es una pantalla unica.
 
 ### Que hace cada parte de `App.js`
 
@@ -425,7 +423,7 @@ En una terminal:
 npm run server
 ```
 
-Debes ver algo asi:
+Debe ver algo asi:
 
 ```txt
 Servidor listo en http://127.0.0.1:3001
@@ -486,7 +484,7 @@ Si todo esta bien:
 
 - la app se abre;
 - se actualiza el bloque "Ultimo retorno recibido";
-- veras el estado `Aprobado`.
+- vera el estado `Aprobado`.
 
 Tambien puedes probar `pending` o `failure`:
 
@@ -512,7 +510,7 @@ La idea es:
 
 - tu aplicacion usa credenciales de prueba;
 - el checkout se prueba con un comprador de prueba;
-- no usas una tarjeta real.
+- no usar una tarjeta real.
 
 ### Paso 2. Recomendacion oficial: usar modo incognito
 
@@ -576,7 +574,7 @@ Para Mexico, la tabla oficial usa el **nombre del titular** para simular el resu
 
 ### Que deberias ver en la app
 
-Cuando Mercado Pago regrese a tu app:
+Cuando Mercado Pago regrese a la app:
 
 - en `success`, la tarjeta verde se marca como activa;
 - en `pending`, la tarjeta amarilla se marca como activa;
@@ -620,13 +618,13 @@ Cuando el flujo de pruebas ya funcione, antes de cobrar de verdad debes hacer es
 2. Reemplazar el `TEST_ACCESS_TOKEN` por el token productivo.
 3. Usar URLs reales y seguras en tu backend.
 4. Tener **SSL/HTTPS** en el entorno de produccion.
-5. Revisar si quieres agregar notificaciones de pago para sincronizar estados.
+5. Revisar si quiere agregar notificaciones de pago para sincronizar estados.
 
 ### Importante
 
-Esta demo **no implementa webhooks** ni verificacion posterior del pago.
+Esta demo **no implementa webhooks** ni verificacion posterior del pago, por que lo vuelve mas tardado y complicado en tema de configuracion en la cuenta de MP.
 
-Eso esta bien para una demo base, pero en produccion normalmente querras:
+Eso esta bien para una demo base, pero en produccion normalmente es:
 
 - notificaciones de pago;
 - persistencia de pedidos;
