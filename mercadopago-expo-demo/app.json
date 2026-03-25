@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Demo Mercado Pago Expo",
+    "slug": "mercadopago-expo-demo",
+    "version": "1.0.0",
+    "scheme": "mercadopagoexpo",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.demo.mercadopagoexpodemo"
+    },
+    "android": {
+      "package": "com.demo.mercadopagoexpodemo",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-dev-client",
+      "expo-web-browser"
+    ]
+  }
+}

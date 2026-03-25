@@ -1,0 +1,28 @@
+{
+  "name": "mercadopago-expo-demo",
+  "description": "Demo didactica de Mercado Pago en Expo con Checkout Pro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "server": "node server/index.js",
+    "prebuild:ios": "expo prebuild --platform ios",
+    "prebuild:clean:ios": "expo prebuild --clean --platform ios"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "expo": "~55.0.8",
+    "expo-dev-client": "~55.0.18",
+    "expo-linking": "~55.0.8",
+    "expo-status-bar": "~55.0.4",
+    "expo-web-browser": "~55.0.10",
+    "express": "^5.2.1",
+    "mercadopago": "^2.12.0",
+    "react": "19.2.0",
+    "react-native": "0.83.2"
+  },
+  "private": true
+}
