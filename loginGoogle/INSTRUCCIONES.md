@@ -1,6 +1,5 @@
 # Integración de Auth con Supabase en Expo (Correo/Contraseña + Google)
 
-Guía completa para principiantes, basada en el estado actual de este proyecto.
 
 Objetivo de esta guía:
 - Dejar funcionando `registro` e `inicio de sesión` con correo y contraseña.
@@ -55,7 +54,7 @@ src/
 
 ## 3. Configuración de `app.json` (deep links en mobile)
 
-Tu proyecto ya tiene esto:
+El proyecto ya tiene esto:
 
 - `scheme: "logingoogle"`
 
@@ -66,7 +65,7 @@ Archivo actual:
 - `app.json`
 
 Importante:
-- Si cambias `scheme`, en mobile debes reconstruir tu app (development build o release build).
+- Si cambias `scheme`, en mobile debes reconstruir la app (development build o release build).
 
 ---
 
